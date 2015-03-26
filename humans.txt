@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Yves ANDOLFATTO -- WebMaster -- <yves.andolfatto@ms-innov.com>
+  From: France
+
+# THANKS
+
+  Julien MOREL <j.morel@ms-innov.com>
+
+# TECHNOLOGY COLOPHON
+
+  Language: Francais
+  Standards: HTML5, CSS3
+  Components: Apache Server Configs, jQuery, Bootstrap
+  IDE: Sublime Text
+
