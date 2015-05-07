@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="fr"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>.· MS INNOV ·.</title>
   <meta name="author" content="Link WebCreations">
   <meta name="description" content="MOREL SECTEUR INNOVATION">
@@ -52,6 +52,7 @@
 
       <div id="msi-navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li class="hidden"><a href="#page-top"></a></li>
           <li><a class="page-scroll" href="#msi-services">Services</a></li>
           <li><a class="page-scroll" href="#msi-team">L'équipe</a></li>
           <li><a class="page-scroll" href="#msi-about">A propos</a></li>
@@ -279,41 +280,60 @@
 
         <div class="row">
           <div class="col-md-4">
-            <div class="row">
-              <div id="mapcanvas">
-              </div>
+            <div id="mapcanvas">
             </div>
-            <div class="row">
-              <address>
-                <strong>Adresse</strong><br>
-                <br>
-                MS INNOV<br>
-                195 avenue Jean Jaurès<br>
-                90000 Belfort, France<br>
-                Tel: (+33) 06 82 93 48 16
-                <ul class="social">
-                  <li><a href="https://fr.linkedin.com/pub/julien-morel/99/67b/b7/fr" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://google.com/+MS-Innov"><i class="fa fa-google-plus"></i></a></li>
-                </ul>
-              </address>
-            </div>
+            <address>
+              <strong>Adresse</strong><br>
+              <br>
+              MS INNOV<br>
+              195 avenue Jean Jaurès<br>
+              90000 Belfort, France<br>
+              Tel: (+33) 06 82 93 48 16
+              <ul class="social">
+                <li><a href="https://fr.linkedin.com/pub/julien-morel/99/67b/b7/fr" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://google.com/+MS-Innov"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </address>
           </div>
 
           <div class="col-md-8">
-            <form method="post" autocomplete="off">
+            <form name="sentMessage" autocomplete="off" id="contactForm">
               <div class="row">
+
                 <div class="col-md-6">
-                  <input id="form-name" type="text" class="form-control" placeholder="Nom">
-                  <input id="form-tel" type="text" class="form-control" placeholder="No. Téléphone">
+                  <div class="form-group">
+                    <input id="name" type="text" class="form-control" placeholder="Nom" required>
+                  </div>
+                  <div class="form-group">
+                    <input id="phone" type="tel" class="form-control" placeholder="No. Téléphone" required>
+                  </div>
                 </div>
+
                 <div class="col-md-6">
-                  <input id="form-email" type="text" class="form-control" placeholder="Email">
-                  <input id="form-sujet" type="text" class="form-control" placeholder="Sujet">
+                  <div class="form-group">
+                    <input id="email" type="email" class="form-control" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <input id="subject" type="text" class="form-control" placeholder="Sujet" required>
+                  </div>
                 </div>
-              </div>
-              <textarea id="form-message" class="form-control" rows="4" placeholder="Message"></textarea>
-              <div class="text-right">
-                <button type="submit" class="btn msi-btn btn-default">Envoyer</button>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea id="message" class="form-control" row="4" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                  <div class="text-right">
+                    <div id="success"></div>
+                  </div>
+                  <div class="text-right">
+                    <button type="submit" class="btn msi-btn btn-default">Envoyer</button>
+                  </div>
+                </div>
+
               </div>
             </form>
           </div>
@@ -349,6 +369,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
   <!--<script src="js/vendor/initmap.min.js"></script>-->
+  <script src="js/vendor/jqBootstrapValidation.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
