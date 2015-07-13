@@ -596,6 +596,19 @@ button.btn.msi-btn.btn-default:hover{
 
 /* Footer
 -------------------------------------------------- */
+.mapcanvas,
+.mapcanvas *,
+.mapcanvas *:before,
+.mapcanvas *:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+
+
+/* Footer
+-------------------------------------------------- */
 footer {
   background: #222222;
   color: #ffffff;
