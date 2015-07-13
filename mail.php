@@ -1,18 +1,6 @@
 <?php
 
-  // Check for empty fields
-  if(empty($_POST['name'])   ||
-    empty($_POST['phone'])     ||
-    empty($_POST['email'])   ||
-    empty($_POST['subjet'])  ||
-    empty($_POST['message']) ||
-    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-    {
-      echo "No arguments Provided!";
-      return false;
-    }
-
-  $to = "postmaster@ms-innov.com , yves.andolfatto@gmail.com";
+  $to = "postmaster@ms-innov.com";
 
   extract($_POST);
   $nom_txt = strip_tags($name);
