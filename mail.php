@@ -1,13 +1,13 @@
 <?php
 
-  $to = "postmaster@ms-innov.com";
+  $to = "postmaster@ms-innov.com , j.morel@ms-innov.com";
 
   extract($_POST);
   $nom_txt = strip_tags($name);
   $email_txt = strip_tags($email);
   $message_txt = strip_tags($message);
   $phone_txt = strip_tags($phone);
-  $subjet_txt = strip_tags($subjet);
+  $subject_txt = strip_tags($subject);
 
   // Suivant les serveurs :
   if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $to))
@@ -20,7 +20,7 @@
   }
 
   //=====Définition du sujet.
-  $subjet = "From ms-innov.com - \"".$subjet_txt."\"";
+  $subject = "From ms-innov.com - \"".$subject_txt."\"";
   //=====Création du header de l'e-mail.
   $header = "From: \"".$nom_txt."\"<".$email_txt.">".$passage_ligne;
   $header.= "Reply-to: \"".$nom_txt."\"<".$email_txt.">".$passage_ligne;
@@ -34,5 +34,5 @@
   $msg.= $passage_ligne.$message_txt.$passage_ligne;
 
   //=====Envoi de l'e-mail.
-  mail($to,$subjet,$msg,$header);
+  mail($to,$subject,$msg,$header);
 ?>
