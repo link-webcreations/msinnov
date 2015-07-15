@@ -8,6 +8,11 @@
 //   $('#mapcanvas').initMap({ center : 'Paris, France' });
 // }());
 
+// Automatically adjust textarea height.
+$(document).ready(function() {
+  autosize(document.querySelector('textarea'));
+});
+
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
   if ($(".navbar").offset().top > 650) {
@@ -18,7 +23,7 @@ $(window).scroll(function() {
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+$(document).ready(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -28,8 +33,28 @@ $(function() {
     });
 });
 
+// Team caroussel
+/*$(document).ready(function() {
+  $("#team-caroussel").owlCarousel({
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    autoHeight : true,
+    itemsCustom : [
+                  [0, 1],
+                  [450, 2],
+                  [600, 2],
+                  [700, 2],
+                  [1000, 4],
+                  [1200, 4],
+                  [1400, 4],
+                  [1600, 4]
+    ],
+  });
+});*/
+
 //Contact
-$(function() {
+$(document).ready(function() {
 
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
