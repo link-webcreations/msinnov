@@ -86,7 +86,6 @@ h1 {
 h2 {
   font-family: "MinionPro", times, serif;
   text-transform: uppercase;
-  line-height: 20px;
   margin: 0;
 }
 h3 {
@@ -594,7 +593,7 @@ button.btn.msi-btn.btn-default:hover{
 
 
 
-/* Footer
+/* Google map
 -------------------------------------------------- */
 .mapcanvas,
 .mapcanvas *,
