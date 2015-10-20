@@ -18,6 +18,7 @@
      !filter_var($email_txt,FILTER_VALIDATE_EMAIL))
   {
     http_response_code(406);
+    exit;
   }
 
   //=====Convertire les saut de ligne suivant les serveurs :
