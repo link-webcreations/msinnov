@@ -27,6 +27,20 @@
 
 
 
+/* FontAwesome ublock adblock workaround
+/* https://gist.github.com/jarv/ec34057d8e8138c8b921
+-------------------------------------------------- */
+.fa-google-plus:before,
+.my-fa-google-plus:before {
+  content: "\f0d5";
+}
+.fa-linkedin:before,
+.my-fa-linkedin:before {
+  content: "\f0e1";
+}
+
+
+
 /* Fonts
 -------------------------------------------------- */
 @font-face {
