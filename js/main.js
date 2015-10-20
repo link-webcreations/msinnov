@@ -95,11 +95,11 @@ $(document).ready(function() {
           $('#contactForm').trigger("reset");
         },
         error: function() {
-            // Fail message
+          // Fail message
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
               .append("</button>");
-          $('#success > .alert-danger').append("<strong>Désolé " + firstName + ", il semble que mon email ne soit pas joignable. Merci de réessayer plus tard!");
+          $('#success > .alert-danger').append("<strong>Désolé " + firstName + ", une erreur est survenue. (Tous les champs sont requis) ");
           $('#success > .alert-danger').append('</div>');
           //DO NOT clear all fields
           //$('#contactForm').trigger("reset");

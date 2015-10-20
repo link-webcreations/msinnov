@@ -9,7 +9,18 @@
   $phone_txt = strip_tags($phone);
   $subject_txt = strip_tags($subject);
 
-  // Suivant les serveurs :
+  //=====Vérifier si les valeurs sont vides
+  if(empty($nom_txt)     ||
+     empty($email_txt)   ||
+     empty($message_txt) ||
+     empty($phone_txt)   ||
+     empty($subject_txt) ||
+     !filter_var($email_txt,FILTER_VALIDATE_EMAIL))
+  {
+    http_response_code(406);
+  }
+
+  //=====Convertire les saut de ligne suivant les serveurs :
   if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $to))
   {
     $passage_ligne = "\r\n";
