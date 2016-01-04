@@ -3,6 +3,16 @@
   Yves ANDOLFATTO
   =========================================================================== */
 
+// Wait until the images are loaded
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.loading').css('opacity','0');
+    setTimeout(function(){
+      $('.loading').addClass('hide');
+    }, 500);
+  }, 3000);
+});
+
 // Automatically adjust textarea height.
 $(document).ready(function() {
   autosize(document.querySelector('textarea'));
