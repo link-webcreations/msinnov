@@ -10,11 +10,11 @@ Source of ms-innov.com
 
 ## Installation
 
-`git clone git@ssh.github.com:link-webcreations/msinnov.git`
-
-`cd msinnov`
-
-`python -m SimpleHTTPServer 8080`
+```shell
+git clone git@ssh.github.com:link-webcreations/msinnov.git
+cd msinnov
+python -m SimpleHTTPServer 8080
+```
 
 ## Contributing
 
