@@ -5,10 +5,11 @@
 
 // Wait until the images are loaded
 document.onreadystatechange = function(){
-  if (document.readyState == "complete"){
-      $('.loading').addClass('hide');
-  } else {
+  if (document.readyState == 'complete'){
     $('.loading').css('opacity','0');
+    $('.loading').bind('transitionend', function(){
+      $(this).addClass('hidden');
+    });
   };
 };
 

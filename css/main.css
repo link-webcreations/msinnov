@@ -133,9 +133,6 @@ h3 {
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.7, 0, 0.3, 1);
 }
-.loading .hide {
-  display: none;
-}
 .loading .loading-container {
   z-index: 1033;
   display: block;
