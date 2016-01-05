@@ -4,16 +4,17 @@
 # TEAM
 
   Yves ANDOLFATTO -- WebMaster -- <postmaster@ms-innov.com>
+  Vincent BESANCON -- nVentiveUX founder -- <besancon.vincent@gmail.com>
   From: France
 
 # THANKS
 
-  Julien MOREL <j.morel@ms-innov.com>
+  Julien MOREL -- MS-INNOV founder -- <j.morel@ms-innov.com>
 
 # TECHNOLOGY COLOPHON
 
   Language: Francais
-  Standards: HTML5, CSS3
+  Standards: HTML5, CSS3, JS
   Components: Apache Server Configs, jQuery, Bootstrap
-  IDE: Sublime Text
+  IDE: Sublime Text, Atom
 
