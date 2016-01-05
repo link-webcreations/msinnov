@@ -4,14 +4,13 @@
   =========================================================================== */
 
 // Wait until the images are loaded
-$(document).ready(function(){
-  setTimeout(function(){
-    $('.loading').css('opacity','0');
-    setTimeout(function(){
+document.onreadystatechange = function(){
+  if (document.readyState == "complete"){
       $('.loading').addClass('hide');
-    }, 500);
-  }, 3000);
-});
+  } else {
+    $('.loading').css('opacity','0');
+  };
+};
 
 // Automatically adjust textarea height.
 $(document).ready(function() {
