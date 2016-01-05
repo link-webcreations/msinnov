@@ -281,6 +281,7 @@ a:focus {
 }
 .navbar-default .navbar-brand img {
   height: 40px;
+  width: auto;
   margin-top: -10px;
 }
 .navbar-default .navbar-collapse {
