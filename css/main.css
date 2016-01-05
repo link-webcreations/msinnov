@@ -184,7 +184,7 @@ h3 {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #FEBE21;
+  border-top-color: #FEC373;
   -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
@@ -198,7 +198,7 @@ h3 {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #FEC373;
+  border-top-color: #F1F1F1;
   -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
           animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
