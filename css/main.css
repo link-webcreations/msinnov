@@ -334,7 +334,7 @@ a:focus {
 /* Home Section
 -------------------------------------------------- */
 header {
-  background-image: url(../img/bg1.jpg);
+  background-image: url(../img/bg/bg1.jpg);
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -405,7 +405,7 @@ header a i.fa.fa-angle-down:hover {
 /* Team Section
 -------------------------------------------------- */
 #msi-team {
-  background-image: url(../img/bg2.jpg);
+  background-image: url(../img/bg/bg2.jpg);
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -642,7 +642,7 @@ header a i.fa.fa-angle-down:hover {
 /* Contact Section
 -------------------------------------------------- */
 #msi-contact {
-  background-image: url(../img/bg3.jpg);
+  background-image: url(../img/bg/bg3.jpg);
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
