@@ -34,6 +34,10 @@
 .my-fa-google-plus:before {
   content: "\f0d5";
 }
+.fa-google:before,
+.my-fa-google:before {
+  content: "\f1a0";
+}
 .fa-linkedin:before,
 .my-fa-linkedin:before {
   content: "\f0e1";
